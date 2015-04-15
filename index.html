@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="sports-feeds">
+<head>
+    <title>Soccer App</title>
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+
+	<div class="col-sm-6" ng-controller="WIDukeController as wiDuke">
+		{{wiDuke.game.title}}
+		{{wiDuke.game.away.market}}
+		{{wiDuke.game.home.market}}
+	
+<!-- 
+  		<ul class="list-group" ng-repeat="team in teams">
+    		<li class="list-group-item">
+    			<p ng-show="team.home">Home</p>
+      			<p>Name: {{team.name}}</p>
+      			<p>Country Code: {{team.country_code}}</p>
+      			<p>Formation: {{team.formation}}</p>
+
+    		</li>
+  		</ul>
+ -->
+  	</div>
+
+</body>
+</html>

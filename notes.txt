@@ -1,0 +1,10 @@
+Instructions: file:///Users/bkelly/Downloads/test_root/instructions.html
+Data root: file:///Users/bkelly/Downloads/test_root/js/data/
+
+Angular tutorial: https://www.codeschool.com/courses/shaping-up-with-angular-js/videos
+Github repositories: https://github.com/brynjabryn/ How to: https://github.com/indexzero/http-server
+Promises in AngularJS: 
+http://www.dwmkerr.com/promises-in-angularjs-the-definitive-guide/
+https://docs.angularjs.org/api/ng/service/$http
+https://docs.angularjs.org/api/ng/service/$q
+Run a local server: http://stackoverflow.com/questions/27742070/angularjs-error-cross-origin-requests-are-only-supported-for-protocol-schemes
