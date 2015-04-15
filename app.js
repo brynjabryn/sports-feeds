@@ -13,6 +13,8 @@
 		$http(req)
 			.success(function(data){
 				wiDuke.game = data;
+				homePoints = wiDuke.game.home.leaders.points[0];
+				console.log(homePoints);
 			})
 			.error(function(response, status) {
 				console.log("The SportsData request failed with response " + response + " and status code " + status);
