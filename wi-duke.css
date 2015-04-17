@@ -1,0 +1,8 @@
+body {
+	padding: 10px;
+}
+.outer {
+	border: 1px solid;
+	border-radius: 4px;
+	padding: 20px;
+}
