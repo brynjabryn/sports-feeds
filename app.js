@@ -6,14 +6,14 @@
 		url: '/data/WI-DUKE-BOXSCORE.json'
 	}
 	
-	app.controller('WIDukeController', ['$http', function($http) {
-		var wiDuke = this;
-		wiDuke.game = [];
+	app.controller('WIDukeBoxController', ['$http', function($http) {
+		var wiDukeBox = this;
+		wiDukeBox.stats = [];
 			
 		$http(req)
 			.success(function(data){
-				wiDuke.game = data;
-				homePoints = wiDuke.game.home.leaders.points[0];
+				wiDukeBox.stats = data;
+				homePoints = wiDukeBox.stats.home.leaders.points[0];
 				console.log(homePoints);
 			})
 			.error(function(response, status) {
