@@ -8,147 +8,240 @@
 	<script type="text/javascript" src="app.js"></script>
 </head>
 <body>			
-	<div class="outer" ng-controller="WIDukeBoxController as wiDukeBox">
-		<h1>{{wiDukeBox.stats.title}}</h1>
-		<h2>{{wiDukeBox.stats.away.market}} (Away)</h2>
-		<div class="table-responsive">
-			<table class="table table-hover table-responsive">
-				<tr>
-					<th>Name</th>
-					<th>Position</th>
-					<th>Minutes</th>
-					<th>Field Goals Made</th>
-					<th>Three Points Made</th>
-					<th>Free Throws Made</th>
-					<th>Offensive Rebounds</th>
-					<th>Rebounds</th>
-					<th>Assists</th>
-					<th>Steals</th>
-					<th>Blocks</th>
-					<th>Assists Turnover Ratio</th>
-					<th>Personal Fouls</th>
-					<th>Points</th>			
-				</tr>
-				<tr>
-					<td>{{wiDukeBox.stats.away.leaders.points[0].full_name}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.points[0].position}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.points[0].statistics.minutes}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.points[0].statistics.field_goals_made}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.points[0].statistics.three_points_made}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.points[0].statistics.free_throws_made}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.points[0].statistics.offensive_rebounds}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.points[0].statistics.rebounds}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.points[0].statistics.assists}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.points[0].statistics.steals}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.points[0].statistics.blocks}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.points[0].statistics.assists_turnover_ratio}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.points[0].statistics.personal_fouls}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.points[0].statistics.points}}</li>
-				</tr>
-				<tr>
-					<td>{{wiDukeBox.stats.away.leaders.rebounds[0].full_name}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.rebounds[0].position}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.rebounds[0].statistics.minutes}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.rebounds[0].statistics.field_goals_made}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.rebounds[0].statistics.three_points_made}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.rebounds[0].statistics.free_throws_made}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.rebounds[0].statistics.offensive_rebounds}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.rebounds[0].statistics.rebounds}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.rebounds[0].statistics.assists}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.rebounds[0].statistics.steals}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.rebounds[0].statistics.blocks}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.rebounds[0].statistics.assists_turnover_ratio}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.rebounds[0].statistics.personal_fouls}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.rebounds[0].statistics.points}}</li>
-				</tr>
-				<tr>
-					<td>{{wiDukeBox.stats.away.leaders.assists[0].full_name}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.assists[0].position}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.assists[0].statistics.minutes}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.assists[0].statistics.field_goals_made}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.assists[0].statistics.three_points_made}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.assists[0].statistics.free_throws_made}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.assists[0].statistics.offensive_rebounds}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.assists[0].statistics.rebounds}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.assists[0].statistics.assists}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.assists[0].statistics.steals}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.assists[0].statistics.blocks}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.assists[0].statistics.assists_turnover_ratio}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.assists[0].statistics.personal_fouls}}</li>
-					<td>{{wiDukeBox.stats.away.leaders.assists[0].statistics.points}}</li>
-				</tr>
-			</table>
-		</div>
-		
-		<h2>{{wiDukeBox.stats.home.market}} (Home)</h2>
-		<div class="table-responsive">
-			<table class="table table-hover table-responsive">
-				<tr>
-					<th>Name</th>
-					<th>Position</th>
-					<th>Minutes</th>
-					<th>Field Goals Made</th>
-					<th>Three Points Made</th>
-					<th>Free Throws Made</th>
-					<th>Offensive Rebounds</th>
-					<th>Rebounds</th>
-					<th>Assists</th>
-					<th>Steals</th>
-					<th>Blocks</th>
-					<th>Assists Turnover Ratio</th>
-					<th>Personal Fouls</th>
-					<th>Points</th>			
-				</tr>
-				<tr>
-					<td>{{wiDukeBox.stats.home.leaders.points[0].full_name}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.points[0].position}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.points[0].statistics.minutes}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.points[0].statistics.field_goals_made}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.points[0].statistics.three_points_made}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.points[0].statistics.free_throws_made}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.points[0].statistics.offensive_rebounds}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.points[0].statistics.rebounds}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.points[0].statistics.assists}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.points[0].statistics.steals}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.points[0].statistics.blocks}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.points[0].statistics.assists_turnover_ratio}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.points[0].statistics.personal_fouls}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.points[0].statistics.points}}</li>
-				</tr>
-				<tr>
-					<td>{{wiDukeBox.stats.home.leaders.rebounds[0].full_name}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.rebounds[0].position}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.rebounds[0].statistics.minutes}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.rebounds[0].statistics.field_goals_made}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.rebounds[0].statistics.three_points_made}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.rebounds[0].statistics.free_throws_made}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.rebounds[0].statistics.offensive_rebounds}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.rebounds[0].statistics.rebounds}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.rebounds[0].statistics.assists}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.rebounds[0].statistics.steals}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.rebounds[0].statistics.blocks}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.rebounds[0].statistics.assists_turnover_ratio}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.rebounds[0].statistics.personal_fouls}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.rebounds[0].statistics.points}}</li>
-				</tr>
-				<tr>
-					<td>{{wiDukeBox.stats.home.leaders.assists[0].full_name}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.assists[0].position}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.assists[0].statistics.minutes}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.assists[0].statistics.field_goals_made}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.assists[0].statistics.three_points_made}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.assists[0].statistics.free_throws_made}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.assists[0].statistics.offensive_rebounds}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.assists[0].statistics.rebounds}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.assists[0].statistics.assists}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.assists[0].statistics.steals}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.assists[0].statistics.blocks}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.assists[0].statistics.assists_turnover_ratio}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.assists[0].statistics.personal_fouls}}</li>
-					<td>{{wiDukeBox.stats.home.leaders.assists[0].statistics.points}}</li>
-				</tr>
-			</table>
-		</div>
+	<div class="outer">
+<!-- 		<h1>{{wiDukeBox.stats.title}}</h1> -->
+		<section ng-controller="TabController as tab">
+			<ul class="nav nav-tabs">
+				<li ng-class="{active:tab.isSelected(1)}">
+					<a href ng-click="tab.selectTab(1)">Boxscore</a>
+				</li>
+				<li ng-class="{active:tab.isSelected(2)}">
+					<a href ng-click="tab.selectTab(2)">Play By Play</a>
+				</li>
+			</ul>
+			<div class="panel" ng-show="tab.isSelected(1)" ng-controller="WIDukeBoxController as wiDukeBox">
+				<div class="box">
+					<h2>Boxscore</h2>
+					<div class="table-responsive">
+						<table class="table table-hover table-responsive">
+							<tr>
+								<th></th>
+								<th>1st Half</th>
+								<th>2nd Half</th>
+								<th>Final</th>
+							</tr>
+							<tr class="{{wiDukeBox.stats.away.market}}">
+								<td>({{wiDukeBox.stats.away.rank}}) {{wiDukeBox.stats.away.market}} (Away)</td>
+								<td>{{wiDukeBox.stats.away.scoring[0].points}}</td>
+								<td>{{wiDukeBox.stats.away.scoring[1].points}}</td>
+								<td class="bold">{{wiDukeBox.stats.away.points}}</td>
+							</tr>
+							<tr class="{{wiDukeBox.stats.home.market}}">
+								<td>({{wiDukeBox.stats.home.rank}}) {{wiDukeBox.stats.home.market}} (Home)</td>
+								<td>{{wiDukeBox.stats.home.scoring[0].points}}</td>
+								<td>{{wiDukeBox.stats.home.scoring[1].points}}</td>
+								<td class="bold">{{wiDukeBox.stats.home.points}}</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="box">
+					<h2>Leaders</h2>
+					<h3>Points</h3>
+					<div class="table-responsive">
+						<table class="table table-hover table-responsive">
+							<tr>
+								<th></th>
+								<th>Name</th>
+								<th>Position</th>
+								<th>Minutes</th>
+								<th>Field Goals Made</th>
+								<th>Three Points Made</th>
+								<th>Free Throws Made</th>
+								<th>Offensive Rebounds</th>
+								<th>Rebounds</th>
+								<th>Assists</th>
+								<th>Steals</th>
+								<th>Blocks</th>
+								<th>Assists Turnover Ratio</th>
+								<th>Personal Fouls</th>
+								<th>Points</th>			
+							</tr>
+							<tr class="{{wiDukeBox.stats.away.market}}">
+								<td>({{wiDukeBox.stats.away.rank}}) {{wiDukeBox.stats.away.market}}</td>
+								<td>{{wiDukeBox.stats.away.leaders.points[0].full_name}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.points[0].position}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.points[0].statistics.minutes}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.points[0].statistics.field_goals_made}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.points[0].statistics.three_points_made}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.points[0].statistics.free_throws_made}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.points[0].statistics.offensive_rebounds}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.points[0].statistics.rebounds}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.points[0].statistics.assists}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.points[0].statistics.steals}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.points[0].statistics.blocks}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.points[0].statistics.assists_turnover_ratio}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.points[0].statistics.personal_fouls}}</li>
+								<td class="bold">{{wiDukeBox.stats.away.leaders.points[0].statistics.points}}</li>
+							</tr>
+							<tr class="{{wiDukeBox.stats.home.market}}">
+								<td>({{wiDukeBox.stats.home.rank}}) {{wiDukeBox.stats.home.market}}</td>
+								<td>{{wiDukeBox.stats.home.leaders.points[0].full_name}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.points[0].position}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.points[0].statistics.minutes}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.points[0].statistics.field_goals_made}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.points[0].statistics.three_points_made}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.points[0].statistics.free_throws_made}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.points[0].statistics.offensive_rebounds}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.points[0].statistics.rebounds}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.points[0].statistics.assists}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.points[0].statistics.steals}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.points[0].statistics.blocks}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.points[0].statistics.assists_turnover_ratio}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.points[0].statistics.personal_fouls}}</li>
+								<td class="bold">{{wiDukeBox.stats.home.leaders.points[0].statistics.points}}</li>
+							</tr>
+							
+						</table>
+					</div>
+					
+					<h3>Rebounds</h3>
+					<div class="table-responsive">
+						<table class="table table-hover table-responsive">
+							<tr>
+								<th></th>
+								<th>Name</th>
+								<th>Position</th>
+								<th>Minutes</th>
+								<th>Field Goals Made</th>
+								<th>Three Points Made</th>
+								<th>Free Throws Made</th>
+								<th>Offensive Rebounds</th>
+								<th>Rebounds</th>
+								<th>Assists</th>
+								<th>Steals</th>
+								<th>Blocks</th>
+								<th>Assists Turnover Ratio</th>
+								<th>Personal Fouls</th>
+								<th>Points</th>			
+							</tr>
+							
+							<tr class="{{wiDukeBox.stats.away.market}}">
+								<td>({{wiDukeBox.stats.away.rank}}) {{wiDukeBox.stats.away.market}}</td>
+								<td>{{wiDukeBox.stats.away.leaders.rebounds[0].full_name}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.rebounds[0].position}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.rebounds[0].statistics.minutes}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.rebounds[0].statistics.field_goals_made}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.rebounds[0].statistics.three_points_made}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.rebounds[0].statistics.free_throws_made}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.rebounds[0].statistics.offensive_rebounds}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.rebounds[0].statistics.rebounds}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.rebounds[0].statistics.assists}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.rebounds[0].statistics.steals}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.rebounds[0].statistics.blocks}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.rebounds[0].statistics.assists_turnover_ratio}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.rebounds[0].statistics.personal_fouls}}</li>
+								<td class="bold">{{wiDukeBox.stats.away.leaders.rebounds[0].statistics.points}}</li>
+							</tr>
+							<tr class="{{wiDukeBox.stats.home.market}}">
+								<td>({{wiDukeBox.stats.home.rank}}) {{wiDukeBox.stats.home.market}}</td>
+								<td>{{wiDukeBox.stats.home.leaders.rebounds[0].full_name}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.rebounds[0].position}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.rebounds[0].statistics.minutes}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.rebounds[0].statistics.field_goals_made}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.rebounds[0].statistics.three_points_made}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.rebounds[0].statistics.free_throws_made}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.rebounds[0].statistics.offensive_rebounds}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.rebounds[0].statistics.rebounds}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.rebounds[0].statistics.assists}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.rebounds[0].statistics.steals}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.rebounds[0].statistics.blocks}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.rebounds[0].statistics.assists_turnover_ratio}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.rebounds[0].statistics.personal_fouls}}</li>
+								<td class="bold">{{wiDukeBox.stats.home.leaders.rebounds[0].statistics.points}}</li>
+							</tr>
+						</table>
+					</div>
+										
+					<h3>Assists</h3>
+					<div class="table-responsive">
+						<table class="table table-hover table-responsive">
+							<tr>
+								<th></th>
+								<th>Name</th>
+								<th>Position</th>
+								<th>Minutes</th>
+								<th>Field Goals Made</th>
+								<th>Three Points Made</th>
+								<th>Free Throws Made</th>
+								<th>Offensive Rebounds</th>
+								<th>Rebounds</th>
+								<th>Assists</th>
+								<th>Steals</th>
+								<th>Blocks</th>
+								<th>Assists Turnover Ratio</th>
+								<th>Personal Fouls</th>
+								<th>Points</th>			
+							</tr>
+							
+							<tr class="{{wiDukeBox.stats.away.market}}">
+								<td>({{wiDukeBox.stats.away.rank}}) {{wiDukeBox.stats.away.market}}</td>
+								<td>{{wiDukeBox.stats.away.leaders.assists[0].full_name}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.assists[0].position}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.assists[0].statistics.minutes}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.assists[0].statistics.field_goals_made}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.assists[0].statistics.three_points_made}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.assists[0].statistics.free_throws_made}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.assists[0].statistics.offensive_rebounds}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.assists[0].statistics.rebounds}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.assists[0].statistics.assists}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.assists[0].statistics.steals}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.assists[0].statistics.blocks}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.assists[0].statistics.assists_turnover_ratio}}</li>
+								<td>{{wiDukeBox.stats.away.leaders.assists[0].statistics.personal_fouls}}</li>
+								<td class="bold">{{wiDukeBox.stats.away.leaders.assists[0].statistics.points}}</li>
+							</tr>
+							<tr class="{{wiDukeBox.stats.home.market}}">
+								<td>({{wiDukeBox.stats.home.rank}}) {{wiDukeBox.stats.home.market}}</td>
+								<td>{{wiDukeBox.stats.home.leaders.assists[0].full_name}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.assists[0].position}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.assists[0].statistics.minutes}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.assists[0].statistics.field_goals_made}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.assists[0].statistics.three_points_made}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.assists[0].statistics.free_throws_made}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.assists[0].statistics.offensive_rebounds}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.assists[0].statistics.rebounds}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.assists[0].statistics.assists}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.assists[0].statistics.steals}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.assists[0].statistics.blocks}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.assists[0].statistics.assists_turnover_ratio}}</li>
+								<td>{{wiDukeBox.stats.home.leaders.assists[0].statistics.personal_fouls}}</li>
+								<td class="bold">{{wiDukeBox.stats.home.leaders.assists[0].statistics.points}}</li>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="panel" ng-show="tab.isSelected(2)" ng-controller="WIDukePbpController as wiDukePbp">
+				<table class="table table-hover table-responsive">
+					<tr>
+						<th>Time</th>
+						<th>Play</th>
+						<th>Possession</th>
+					</tr>
+					<tr class="{{wiDukePbp.stats.periods[0].events[0].possession.market}}">
+						<td>{{wiDukePbp.stats.periods[0].events[0].clock}}</td>
+						<td>{{wiDukePbp.stats.periods[0].events[0].description}}</td>
+						<td>{{wiDukePbp.stats.periods[0].events[0].possession.market}}</td>
+					</tr>
+					<tr class="{{wiDukePbp.stats.periods[0].events[1].possession.market}}">
+						<td>{{wiDukePbp.stats.periods[0].events[1].clock}}</td>
+						<td>{{wiDukePbp.stats.periods[0].events[1].description}}</td>
+						<td>{{wiDukePbp.stats.periods[0].events[1].possession.market}}</td>
+					</tr>
+				</table>	
+			</div>
+		</section>		
   	</div>
 
 </body>

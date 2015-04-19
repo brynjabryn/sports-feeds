@@ -6,3 +6,23 @@ body {
 	border-radius: 4px;
 	padding: 20px;
 }
+.box {
+	border-radius: 4px;
+	background: #EEE;
+	padding: 20px;
+	margin: 10px 0;
+}
+.box table {
+	background: #FFF;
+}
+
+/* Text Styles */
+.Duke {
+	color: #00519b;
+}
+.Wisconsin {
+	color: #bd0f33;
+}
+td.bold {
+	font-weight: bold;
+}
