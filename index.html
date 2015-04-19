@@ -225,20 +225,24 @@
 			<div class="panel" ng-show="tab.isSelected(2)" ng-controller="WIDukePbpController as wiDukePbp">
 				<table class="table table-hover table-responsive">
 					<tr>
+						<th>{{wiDukePbp.stats.away.market}}</th>
 						<th>Time</th>
-						<th>Play</th>
-						<th>Possession</th>
+						<th>{{wiDukePbp.stats.home.market}}</th>
 					</tr>
+					<!--Repeat for each event-->
 					<tr class="{{wiDukePbp.stats.periods[0].events[0].possession.market}}">
+						<!-- Add controller for which td possession ends up in-->
+						<td></td>
 						<td>{{wiDukePbp.stats.periods[0].events[0].clock}}</td>
-						<td>{{wiDukePbp.stats.periods[0].events[0].description}}</td>
-						<td>{{wiDukePbp.stats.periods[0].events[0].possession.market}}</td>
+						<td></td>
 					</tr>
+
+<!-- 
 					<tr class="{{wiDukePbp.stats.periods[0].events[1].possession.market}}">
 						<td>{{wiDukePbp.stats.periods[0].events[1].clock}}</td>
 						<td>{{wiDukePbp.stats.periods[0].events[1].description}}</td>
-						<td>{{wiDukePbp.stats.periods[0].events[1].possession.market}}</td>
 					</tr>
+ -->
 				</table>	
 			</div>
 		</section>		
