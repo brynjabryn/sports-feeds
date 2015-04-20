@@ -8,6 +8,10 @@ body {
 	padding: 20px;
 }
 
+.nav-pills {
+	margin-bottom: 10px;
+}
+
 .box {
 	border-radius: 4px;
 	background: #EEE;
@@ -19,9 +23,8 @@ body {
 	background: #FFF;
 }
 
-.wiDukePbp .column {
-	display: inline-block;
-	width: 100px;
+table .halfHeader {
+	background: #EEE;
 }
 
 /* Text Styles */
