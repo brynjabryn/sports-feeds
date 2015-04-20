@@ -9,7 +9,6 @@
 </head>
 <body>			
 	<div class="outer">
-<!-- 		<h1>{{wiDukeBox.stats.title}}</h1> -->
 		<section ng-controller="TabController as tab">
 			<ul class="nav nav-tabs">
 				<li ng-class="{active:tab.isSelected(1)}">
@@ -19,7 +18,7 @@
 					<a href ng-click="tab.selectTab(2)">Play By Play</a>
 				</li>
 			</ul>
-			<div class="panel" ng-show="tab.isSelected(1)" ng-controller="WIDukeBoxController as wiDukeBox">
+			<div class="panel wiDukeBox" ng-show="tab.isSelected(1)" ng-controller="WIDukeBoxController as wiDukeBox">
 				<div class="box">
 					<h2>Boxscore</h2>
 					<div class="table-responsive">
@@ -222,28 +221,19 @@
 					</div>
 				</div>
 			</div>
-			<div class="panel" ng-show="tab.isSelected(2)" ng-controller="WIDukePbpController as wiDukePbp">
-				<table class="table table-hover table-responsive">
-					<tr>
-						<th>{{wiDukePbp.stats.away.market}}</th>
-						<th>Time</th>
-						<th>{{wiDukePbp.stats.home.market}}</th>
-					</tr>
-					<!--Repeat for each event-->
-					<tr class="{{wiDukePbp.stats.periods[0].events[0].possession.market}}">
-						<!-- Add controller for which td possession ends up in-->
-						<td></td>
-						<td>{{wiDukePbp.stats.periods[0].events[0].clock}}</td>
-						<td></td>
-					</tr>
-
-<!-- 
-					<tr class="{{wiDukePbp.stats.periods[0].events[1].possession.market}}">
-						<td>{{wiDukePbp.stats.periods[0].events[1].clock}}</td>
-						<td>{{wiDukePbp.stats.periods[0].events[1].description}}</td>
-					</tr>
- -->
-				</table>	
+			<div class="panel wiDukePbp" ng-show="tab.isSelected(2)" ng-controller="WIDukePbpController as wiDukePbp">
+					<table class="table table-hover table-responsive">
+						<tr>
+							<th>{{wiDukePbp.stats.away.market}}</th>
+							<th>Time</th>
+							<th>{{wiDukePbp.stats.home.market}}</th>
+						</tr>
+						<tr ng-repeat="event in wiDukePbp.stats.firstHalfArray">
+							<td>{{event.wiDescription}}</td>
+							<td>{{event.clock}}</td>
+							<td>{{event.dukeDescription}}</td>
+						</tr>
+					</table>
 			</div>
 		</section>		
   	</div>
