@@ -1,4 +1,4 @@
-# sports-feeds
+# sportScore
 
 Boxscore and Play By Play Application
 
