@@ -1,0 +1,6 @@
+{
+  "name": "sportScore",
+  "tagline": "",
+  "body": "# sportScore\r\n\r\nBoxscore and Play By Play Application\r\n\r\nLibraries\r\n------------\r\nInstalled under node_modules\r\nBootstrap\r\njQuery\r\nAngularJS\r\n\r\nData\r\n----\r\nUnder data\r\nSupplied by SportsData\r\n\r\nTo Install\r\n----------\r\nPull down the git repository from https://github.com/brynjabryn/sports-feeds\r\nInstructions: http://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository\r\n\r\nTo Run Locally\r\n--------------\r\nRun an http-server from the directory you pulled the repository into\r\nInstructions: https://github.com/indexzero/http-server\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
